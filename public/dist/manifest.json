@@ -1,0 +1,9 @@
+{
+  "name": "CareerPath App",
+  "short_name": "CareerPath",
+  "description": "A career development application",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
