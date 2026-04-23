@@ -1,0 +1,64 @@
+{
+  "name": "UserProgress",
+  "type": "object",
+  "properties": {
+    "career_path_id": {
+      "type": "string",
+      "description": "Reference to chosen career path"
+    },
+    "known_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills the user already knows"
+    },
+    "completed_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills completed in the roadmap"
+    },
+    "missing_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills the user still needs"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "default": "beginner"
+    },
+    "percentage": {
+      "type": "number",
+      "default": 0,
+      "description": "Overall completion percentage"
+    },
+    "quiz_scores": {
+      "type": "object",
+      "description": "Map of skill name to quiz score"
+    },
+    "notifications_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "default": "light"
+    }
+  },
+  "required": [
+    "career_path_id"
+  ]
+}

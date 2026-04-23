@@ -1,0 +1,35 @@
+{
+  "name": "LearningResource",
+  "type": "object",
+  "properties": {
+    "skill_name": {
+      "type": "string",
+      "description": "The skill this resource is for"
+    },
+    "title": {
+      "type": "string",
+      "description": "Resource title"
+    },
+    "url": {
+      "type": "string",
+      "description": "Link to the resource"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "free",
+        "paid"
+      ],
+      "default": "free"
+    },
+    "platform": {
+      "type": "string",
+      "description": "Platform name e.g. YouTube, Udemy"
+    }
+  },
+  "required": [
+    "skill_name",
+    "title",
+    "url"
+  ]
+}

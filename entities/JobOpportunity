@@ -1,0 +1,38 @@
+{
+  "name": "JobOpportunity",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Job title"
+    },
+    "company": {
+      "type": "string"
+    },
+    "career_path": {
+      "type": "string",
+      "description": "Which career path this job is for"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "job",
+        "internship"
+      ],
+      "default": "job"
+    },
+    "location": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "career_path"
+  ]
+}

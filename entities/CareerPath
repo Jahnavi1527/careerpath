@@ -1,0 +1,36 @@
+{
+  "name": "CareerPath",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Career path title e.g. Frontend Developer"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the career"
+    },
+    "required_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of skills required for this career"
+    },
+    "skill_order": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Ordered learning path for skills"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon name for the career"
+    }
+  },
+  "required": [
+    "title",
+    "required_skills"
+  ]
+}
